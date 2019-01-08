@@ -1,0 +1,19 @@
+.add-climb {
+  border-style: double;
+  border-width: 2px;
+  border-color: black;
+  border-radius: 4px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.add-climb > button {
+  text-transform: uppercase;
+  background: none;
+  border: 1px solid black;
+  font-weight: 600;
+  font-size: 1.5rem;
+  font-family: "Open Sans";
+  transitionall: 0.2s;
+  position: relative;
+  z-index: 2;
+}

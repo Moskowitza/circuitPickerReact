@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+.gym-selector > h2 {
+  font: 1rem;
+  color: pink;
+  font-family: Arial, Helvetica, sans-serif;
+  background: blue;
+}
+
+.container {
+  display: flex;
+}
+
+.top {
+  background-color: lightblue;
+}
+.section {
+  height: auto;
+  width: 250px;
+  background-color: lightgrey;
+  border: solid black;
+  display: flex;
+  flex-direction: column;
+  flex-grow: inherit;
+}
+
+.single-climb {
+  background-color: #ffc0cb;
+  height: 150px;
+  margin: 0px;
+}
+.single-climb > * {
+  margin: 0px;
+}
+.thumbnail {
+  height: 50px;
+  width: 50px;
+  float: left;
+}
+ul {
+  list-style-type: none;
+}
+.circuit-enter {
+  background-color: blue;
+  transform: translateX(-120%);
+  transition: 5s;
+  max-height: 0;
+  padding: 0;
+}
+.circuit-enter.circuit-enter-active {
+  background-color: orange;
+  transform: translateX(0%);
+  max-height: 60px;
+  padding: 2rem 0;
+}
+.circuit-exit {
+  background-color: orange;
+  transform: translateX(0%);
+  transition: 5s;
+}
+.circuit-exit.circuit-exit-active {
+  background-color: blue;
+  transform: translateX(120%);
+  max-height: 0;
+  padding: 0;
+}
+.circuit-enter-done {
+  background-color: orange;
+}
